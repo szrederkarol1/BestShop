@@ -117,3 +117,94 @@ a:hover {
 
 /* Complete Header */
 
+.The-most-popular-sales--all-container {
+    width: 1735px;
+    height: 531px;
+    background-color: var(--color-white);
+}
+.title-popular-sales {
+    width: 1735px;
+    height: 242px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-raleway);
+    font-size: 36px;
+    color: var(--color-black);
+}
+.statistics {
+    width: 1735px;
+    height: 289px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.number-statisticks {
+    font-family: var(--font-raleway);
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 5.96px;
+}
+.daily-entries {
+    width: 116px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.seen-products-every-day {
+    width: 176px;
+    height: 167px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 185px;
+    padding-right: 183px;
+}
+.added-posts-daily {
+    width: 163px;
+    height: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.paragraph-staticticks {
+    font-family: var(--font-raleway);
+    font-size: 16px;
+    color: var(--color-grey);
+    text-align: center;
+    justify-content: flex-end;
+    width: 125px;
+}
+.circle-left {
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+    background-color: var(--color-redish);
+    margin-left: 21.73px;
+}
+.circle-center {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+}
+.circle-right {
+    width: 62.71px;
+    height: 62.71px;
+    border-radius: 50%;
+    background-color: var(--color-green);
+    display: flex;
+}
+.eye {
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.person {
+    margin-left: 27px;
+}
+.catalog {
+    margin-left: 30px;
+}
