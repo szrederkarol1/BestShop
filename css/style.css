@@ -381,5 +381,150 @@ a:hover {
     height: 207px;
     z-index: 2;
     margin-top: 98px;
-    margin-right: 72Wpx;
+    margin-right: 72px;
+}
+
+.container-for-offers {
+    width: 100%;
+    height: 616px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.offers {
+    width: 1266px;
+    height: 616px;
+}
+.tittle-offers {
+    font-family: var(--color-black);
+    font-size: 36px;
+}
+.tittle-container {
+    width: 1266px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.basic-offer {
+    width: 372px;
+    height: 461px;
+    border: 1px solid var(--color-redish);
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.professional-offer {
+    width: 405px;
+    height: 500px;
+    border: 1px solid var(--color-primary);
+    border-radius: 18px;
+    box-shadow: 5px 10px 27px var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.premium-offer {
+    width: 372px;
+    height: 461px;
+    border: 1px solid var(--color-redish);
+    border-radius: 18px;
+}
+.list-offers {
+    width: 100%;
+    height: 175px;
+}
+.basic {
+    font-family: var(--font-raleway);
+    font-size: 20px;
+    padding-top: 34px;
+    padding-bottom: 14px;
+    font-weight: bold;
+}
+.price-basic {
+    font-size: 46px;
+    color: var(--color-redish);
+}
+.list-in-basic {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 69px;
+}
+ul li {
+    width: 100%;
+}
+.pricing-item {
+    font-size: 14px;
+}
+.pricing-item::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    margin-right: 10px;
+    background-image: url("../assets/Ckechmark-1.svg");
+}
+.pricing-item-not::before {
+    background-image: url("../assets/Close.svg");
+}
+.basic-offer .btn {
+    position: relative;
+    bottom: -50px;
+    font-size: 0.8125rem;
+    background-color: var(--color-redish);
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+}
+.basic-offer {
+    display: flex;
+    align-items: center;
+}
+.btn {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
+}
+.professional {
+    font-family: var(--font-raleway);
+    font-size: 21px;
+    padding-top: 34px;
+    padding-bottom: 14px;
+    font-weight: bold;
+}
+.price-professional {
+    font-size: 46px;
+    color: var(--color-primary);
+}
+.list-in-professional {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 69px;
+}
+.professional-offer .btn-primary {
+    position: relative;
+    bottom: -60px;
+    font-size: 0.8125rem;
+    background-color: var(--color-primary);
+    width: 165px;
+    height: 50px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 10px 14px #07ACE629;
+}
+.btn-primary {
+    color: var(--color-white);
+    display: flex;
+    align-items: center;
 }
