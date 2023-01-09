@@ -69,15 +69,20 @@ a:hover {
 
 .section-main {
     padding-top: calc(200px - 70px);
-    width: 1735px;
+    width: 100%;
     height: 712px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .img-main {
     background-image: url("../assets/Background.png");
     background-repeat: no-repeat;
-    width: 1735px;
+    width: 100%;
     height: 594px;
+    background-position: center;
 }
 .signature--h1 {
     align-items: center;
@@ -126,6 +131,9 @@ a:hover {
     height: 531px;
     background-color: var(--color-white);
     box-shadow: 0px -5px 80px #00000029;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .title-popular-sales {
     width: 1735px;
@@ -386,9 +394,8 @@ a:hover {
 
 .container-for-offers {
     width: 100%;
-    height: 616px;
+    height: 900px;
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 .offers {
@@ -405,7 +412,6 @@ a:hover {
     display: flex;
     justify-content: center;
     margin-top: 100px;
-    margin-bottom: 50px;
 }
 .basic-offer {
     width: 372px;
@@ -414,6 +420,7 @@ a:hover {
     border-radius: 18px;
     display: flex;
     flex-direction: column;
+    margin-top: 65px;
 }
 .professional-offer {
     width: 405px;
@@ -425,12 +432,17 @@ a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
 }
 .premium-offer {
     width: 372px;
     height: 461px;
     border: 1px solid var(--color-redish);
     border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 65px;
 }
 .list-offers {
     width: 100%;
@@ -527,4 +539,230 @@ ul li {
     color: var(--color-white);
     display: flex;
     align-items: center;
+}
+.list-in-premium {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 69px;
+}
+.premium {
+    font-family: var(--font-raleway);
+    font-size: 20px;
+    padding-top: 34px;
+    padding-bottom: 14px;
+    font-weight: bold;
+}
+.premium-offer .btn {
+    position: relative;
+    bottom: -50px;
+    font-size: 0.8125rem;
+    background-color: var(--color-redish);
+    width: 150px;
+    height: 50px;
+    border-radius: 23px;
+    display: flex;
+    justify-content: center;
+}
+/*Complete prices*/
+
+.form-container-all {
+    width: 100%;
+    height: 376px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-container {
+    width: 896px;
+    height: 376px;
+    display: flex;
+}
+.form-tittle {
+    font-size: 49px;
+    font-family: var(--font-raleway);
+    line-height: 57px;
+}
+.signature-tittle {
+    font-size: 16px;
+    padding-top: 22px;
+}
+.email {
+    font-weight: bold;
+    color: var(--color-grey);
+    padding-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.number {
+    font-weight: bold;
+    color: var(--color-grey);
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.additional-information-form {
+    padding-top: 42px;
+    display: flex;
+
+}
+.email::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-image: url("../assets/Mail Icon.svg");
+}
+.number::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    padding-right: 10px;
+    background-repeat: no-repeat;
+    background-image: url("../assets/Phone Icon.svg");
+}
+.form-info {
+    width: 400px;
+    height: 100%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__field:first-of-type {
+    margin-bottom: 42px;
+}
+
+.form__label {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-primary);
+    line-height: 0.9rem;
+    letter-spacing: 3px;
+    font-size: 0.6875rem;
+}
+
+.form__input {
+    border: none;
+    border-bottom: 1px solid var(--color-grey);
+    background-color: transparent;
+    line-height: 2.625rem;
+}
+.form__consent {
+    margin-top: 30px;
+}
+
+.form__checkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 1.375rem;
+}
+
+.form__checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+.form__checkbox .checkbox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-grey);
+    border-radius: 4px;
+}
+
+.form__checkbox input:checked ~ .checkbox {
+    background-image: url(../assets/Checkmark.svg);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+}
+.form__checkbox .consent__text {
+    margin: 0 10px;
+    font-size: 0.75rem;
+    color: var(--color-grey);
+    line-height: 17px;
+}
+
+.form .btn {
+    font-size: 0.8125rem;
+    padding: 20px 97px;
+    align-self: flex-end;
+    margin-top: 20px;
+}
+.contact__column {
+    width: 440px;
+}
+.btn-btn--primary {
+    width: 226px;
+    height: 57px;
+    border-radius: 35px;
+    height: 57px;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    margin-left: 213px;
+}
+
+/*Start Footer*/
+
+.footer-container {
+    width: 100%;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px -5px 40px #00000029;
+    margin-top: 60px;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    margin-left: 140px;
+}
+.logo-footer {
+    font-family: var(--font-raleway);
+    font-size: 32px;
+    line-height: 30px;
+    color: var(--color-primary);
+    padding-bottom: 10px;
+}
+.info {
+    font-size: 16px;
+    color: var(--color-grey);
+}
+.icons {
+    display: flex;
+    margin-right: 140px;
+    width: 100px;
+    justify-content: space-between;
+}
+.twitter {
+    width: 35px;
+    height: 35px;
+}
+.facebook {
+    width: 35px;
+    height: 35px;
 }
